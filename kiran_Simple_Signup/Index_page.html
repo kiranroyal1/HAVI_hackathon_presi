@@ -1,0 +1,232 @@
+<!--HTML-->
+<html>
+<title>Forms</title>
+<body style="background-color:#F5FFFA">
+
+<!-----------------------javascript------------------------->
+<script type="text/javascript">
+alert("welcome to myForm")
+</script>
+
+<!--forms-->
+<form action="action_page.php">
+
+<!--Personal Information-->
+  <div class="container">
+  <fieldset>
+  <h1 align="center" style="color:#FA8072"><u>Signup page </u></h1>
+  <br>
+    <h2 align="left" style="color:green">Personal Information</h2>
+    <label for="First_Name"><b>First Name :</b></label>
+    <input type="text" placeholder="Enter Your First name" name="First_Name" required>
+    <br>
+    <label for="Last_Name"><b>Last Name :</b></label>
+    <input type="text" placeholder="Enter Last Name" name="Last_Name" required>
+    <br>
+  <!--date of birth-->
+    <label for="birthday"><b>Date of birth :</b></label>
+    <input type="date" id="birthday" name="birthday">
+    <input type="submit" value="Submit">
+    <small style="color:blue" title="click or type the value in the filed">(?)</small>
+  
+  <br>
+  <br>
+  <!--gender-->
+    <label for="gender"><b>Gender :</b></label>
+    <select id="gender" name="gender">
+      <option value="Choose">Choose gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="other">other</option>
+    </select>
+    <input type="submit" value="Submit">
+    <small style="color:blue" title="click on the dropdown in the filed">(?)</small>
+  </fieldset>
+<!--Account Information-->
+  <h2 align="left" style="color:green">Account Information</h2>
+  <!--email-->
+  <fieldset>
+    <label for="email"><b>Email :</b></label>
+    <input type="text" placeholder="Enter Your Email" name="email" required>
+    <pre><small>(Your email address will be your username)</small></pre>
+    <br>
+    <label for="email"><b>Re-type Email:</b></label>
+    <input type="text" placeholder="Enter Your Email again" name="email" required>
+    <br>
+    <label for="psw"><b>Password :</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <pre><small>(Min 8 characters,1 number,Case-sensitive)</small></pre>
+    <br>
+    <label for="psw-repeat"><b>Repeat Password :</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <br>
+    <br>
+  <!--security question-->
+    <label for="security question"><b>security question :</b></label>
+    <select id="gender" name="cars">
+      <option value="Male">Choose a security question</option>
+      <option value="Male">father name</option>
+      <option value="Female">Favourite food</option>
+      <option value="other">pet name</option>
+    </select>
+    <input type="submit">
+    <small style="color:blue" title="click or type the value in the filed">(?)</small>
+    <br>
+    <br>
+  <!--security answer-->
+    <label for="security answer"><b>security answer :</b></label>
+    <input type="text" placeholder="Enter Your security answer" name="security answer" required>
+    <br>
+    <pre><small>(Not case sensitive)</small></pre>
+</fieldset>
+
+<!--Contact Information-->
+
+  <h2 align="left" style="color:green">Contact Information</h2>
+  <fieldset>
+    <label for="Address"><b>Address :</b></label>
+    <input type="text" placeholder="Enter Your Address" name="Address" required>
+    <br>
+    <br>
+    <label for="City"><b>City :</b></label>
+    <input type="text" placeholder="Enter Your City" name="City" required>
+    <br>
+    <br>
+  <!--State-->
+    <label for="state"><b>State:</b></label>
+    <select id="state" name="State">
+      <option value="Choose state">Choose a State</option>
+      <option value="Andhra pradesh">Andhra pradesh</option>
+      <option value="Karnataka">Karnataka</option>
+      <option value="Tamil Nadu">Tamil Nadu</option>
+      <option value="Kerala">Kerala</option>
+      <option value="Maharashtra">Maharashtra</option>
+      <option value="Uttar pradesh">Uttar pradesh</option>
+      <option value="Bihar">Bihar</option>
+      <option value="more">....</option>
+    </select>
+    <input type="submit">
+    <br>
+    <br>
+  <!--Zip code-->
+    <label for="Zipcode"><b>Zipcode:</b></label>
+    <input type="text" placeholder="optional" name="Zipcode">
+    <br>
+    <br>
+  <!--Mobile-->
+    <label for="Number type"><b>Number type:</b></label>
+    <select id="Number type" name="Number type">
+      <option value="Mobile">Mobile</option>
+      <option value="Telephone">Telephone</option>
+    </select>
+    <input type="submit">
+    <small style="color:blue" title="type the contact number in the filed after selcting the type">(?)</small>
+    <br>
+    <br>
+    <label for="Mobile"><b>Mobile :</b></label>
+    <input type="text" placeholder="Enter Your Mobile number" name="Mobile" required>
+    <p>We value your privacy and ensure your details are protected. For more info check our <a href="Terms_n_privacy.html" style="color:dodgerblue">Terms & Privacy</a>.</p>
+</fieldset>
+<br>
+<img align="center" src="Learn.png" alt="Learn">
+
+    <div align="center" class="clearfix">
+  <input style="color:green" type="submit" name="SubmitButton" class="button" value="Submit">
+  <input style="color: red" type="reset" name="ResetButton" class="button" value="Reset">
+    </div>
+  </div>
+</form>
+</body>
+</html>
+<!---------------------------CSS----------------------------->
+
+
+<style>
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 50%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #FAEBD7;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-top: auto;
+  margin-right: auto;
+  width: 40%;
+  opacity:0.4;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+/*inline-block*/
+label{
+  width:100px;
+  display: inline-block;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.signupbtn ,.resetbtn{
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  background-color:blue;
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+</style>
+
+
+
